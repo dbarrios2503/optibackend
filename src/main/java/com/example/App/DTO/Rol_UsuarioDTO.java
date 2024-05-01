@@ -4,7 +4,7 @@
  */
 package com.example.App.DTO;
 
-import com.example.App.clases.*;
+import com.example.App.entities.*;
 import java.util.List;
 import javax.persistence.OneToMany;
 
