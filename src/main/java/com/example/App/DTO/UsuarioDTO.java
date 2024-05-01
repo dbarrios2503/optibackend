@@ -4,7 +4,7 @@
  */
 package com.example.App.DTO;
 
-import com.example.App.clases.*;
+import com.example.App.entities.*;
 
 
 public class UsuarioDTO {

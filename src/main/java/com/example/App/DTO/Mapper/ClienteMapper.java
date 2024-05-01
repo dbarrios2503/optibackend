@@ -5,7 +5,7 @@
 package com.example.App.DTO.Mapper;
 
 import com.example.App.DTO.ClienteDTO;
-import com.example.App.clases.Cliente;
+import com.example.App.entities.Cliente;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
  

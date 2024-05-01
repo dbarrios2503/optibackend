@@ -5,7 +5,7 @@
 package com.example.App.Service;
 
 import com.example.App.DTO.ClienteDTO;
-import com.example.App.clases.Cliente;
+import com.example.App.entities.Cliente;
 
 /**
  *
