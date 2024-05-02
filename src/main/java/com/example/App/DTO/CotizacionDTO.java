@@ -13,7 +13,13 @@ public class CotizacionDTO {
     public CotizacionDTO() {
     }
 
- 
+    public int getId_cotizacion() {
+        return id_cotizacion;
+    }
+
+    public void setId_cotizacion(int id_cotizacion) {
+        this.id_cotizacion = id_cotizacion;
+    }
 
     public String getTitulo() {
         return titulo;
@@ -22,22 +28,8 @@ public class CotizacionDTO {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-/*  public MultipartFile getPdf() {
-        return pdf;
-    }
 
-    public void setPdf(MultipartFile pdf) {
-        this.pdf = pdf;
-    }
-*/
-
-    public int getId_cotizacion() {
-        return id_cotizacion;
-    }
-
-    public void setId_cotizacion(int id_cotizacion) {
-        this.id_cotizacion = id_cotizacion;
-    }
+ 
     
     
 }
