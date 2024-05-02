@@ -1,20 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.example.App.DTO.Mapper;
+package com.example.App.DTO.mapper;
 
 import com.example.App.DTO.ClienteDTO;
 import com.example.App.entities.Cliente;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
- 
-
 @Mapper
 public class ClienteMapper {
     ClienteMapper INSTANCE = Mappers.getMapper(ClienteMapper.class);
-    
+
     public static ClienteDTO convertToDTO(Cliente cliente) {
         ClienteDTO ClienteDTO = new ClienteDTO();
         ClienteDTO.setCodigo(cliente.getCodigo());
@@ -27,7 +21,8 @@ public class ClienteMapper {
 
         return ClienteDTO;
     }
-  public static Cliente convertToDTO(ClienteDTO clienteDTO) {
+
+    public static Cliente convertToDTO(ClienteDTO clienteDTO) {
         Cliente Cliente = new Cliente();
         Cliente.setCodigo(clienteDTO.getCodigo());
         Cliente.setNombres(clienteDTO.getNombres());
@@ -36,9 +31,8 @@ public class ClienteMapper {
         Cliente.setEdad(clienteDTO.getEdad());
         Cliente.setTelefono(clienteDTO.getTelefono());
         Cliente.setFecha_nacimiento(clienteDTO.getFecha_nacimiento());
-        
-        return Cliente;
- }
- 
-}
 
+        return Cliente;
+    }
+
+}
