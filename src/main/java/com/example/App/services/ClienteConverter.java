@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.example.App.Service;
+package com.example.App.services;
 
 import com.example.App.DTO.ClienteDTO;
 import com.example.App.entities.Cliente;
