@@ -5,8 +5,9 @@
 package com.example.App.Service;
 
 import com.example.App.DTO.ClienteDTO;
-import com.example.App.Repository.ClienteRepository;
 import com.example.App.entities.Cliente;
+import com.example.App.repositories.ClienteRepository;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.transaction.Transactional;
