@@ -8,7 +8,6 @@ import lombok.*;
 @NoArgsConstructor
 public class ClienteDTO {
 
-    private Integer codigo;
     private String nombres;
     private String apellidos;
     private String cedula;

@@ -3,7 +3,7 @@ package com.example.App.DTO;
 
 import com.example.App.entities.*;
 import java.util.List;
-import javax.persistence.OneToMany;
+import jakarta.persistence.OneToMany;
 import lombok.*;
 
 @Data
