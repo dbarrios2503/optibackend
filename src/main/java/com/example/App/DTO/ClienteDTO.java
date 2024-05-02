@@ -11,7 +11,7 @@ public class ClienteDTO {
     private String nombres;
     private String apellidos;
     private String cedula;
-    private Integer edad;
+    private int edad;
     private String telefono;
     private Date fecha_nacimiento;
 

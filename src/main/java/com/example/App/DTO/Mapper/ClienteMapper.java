@@ -11,7 +11,6 @@ public class ClienteMapper {
 
     public static ClienteDTO convertToDTO(Cliente cliente) {
         ClienteDTO ClienteDTO = new ClienteDTO();
-        ClienteDTO.setCodigo(cliente.getCodigo());
         ClienteDTO.setNombres(cliente.getNombres());
         ClienteDTO.setApellidos(cliente.getApellidos());
         ClienteDTO.setCedula(cliente.getCedula());
@@ -24,7 +23,6 @@ public class ClienteMapper {
 
     public static Cliente convertToDTO(ClienteDTO clienteDTO) {
         Cliente Cliente = new Cliente();
-        Cliente.setCodigo(clienteDTO.getCodigo());
         Cliente.setNombres(clienteDTO.getNombres());
         Cliente.setApellidos(clienteDTO.getApellidos());
         Cliente.setCedula(clienteDTO.getCedula());
