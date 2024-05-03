@@ -1,20 +1,12 @@
 package com.example.App.entities;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Date;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
+import java.time.LocalDateTime;
 
 @Entity
-@Table
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -25,9 +17,10 @@ public class Requerimento {
     private int id_requerimeinto;
     private String titulo;
     private String descripcion;
-    private int state;
-    @Temporal(javax.persistence.TemporalType.DATE)
-    private Date fecha_creacion;
+    @ManyToOne
+    @JoinColumn(name = "id_estado")
+    private Estado estado;
+    private LocalDateTime fecha_creacion;
     private String comentaio_rector;
     private String comentario_logistico;
     private String comentario_compra;

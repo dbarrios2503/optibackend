@@ -5,12 +5,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Temporal;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Temporal;
 
 @Entity
 @AllArgsConstructor
@@ -27,7 +27,7 @@ public class Cliente {
     private String cedula;
     private Integer edad;
     private String telefono;
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(jakarta.persistence.TemporalType.DATE)
     private Date fecha_nacimiento;
 
 }
