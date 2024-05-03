@@ -1,4 +1,4 @@
-package com.example.App.DTO;
+package com.example.app.dto;
 
 import java.util.Date;
 import lombok.*;

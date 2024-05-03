@@ -32,7 +32,7 @@ public class UsuarioService {
 
     public UsuarioDTO updateUsuario(Long id, UsuarioDTO usuarioDTO) {
         Usuario existingUsuario = usuarioRepository.findById(id).orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
-
+//ESTA MALO 
         existingUsuario.setNombre(usuarioDTO.getNombre());
         existingUsuario.setApellido(usuarioDTO.getApellido());
         existingUsuario.setPassword(usuarioDTO.getPassword());
@@ -42,7 +42,7 @@ public class UsuarioService {
         existingUsuario.setDepartamento(usuarioDTO.getDepartamento());
 
         existingUsuario = usuarioRepository.save(existingUsuario);
-
+//ESTA MALO 
         return UsuarioConverter.usuarioToDTO(existingUsuario);
     }
 
